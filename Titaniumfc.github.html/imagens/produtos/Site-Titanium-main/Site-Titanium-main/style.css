@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #333;
+    padding-bottom: 60px; /* Adicionado para evitar sobreposição do rodapé */
+}
+
+
+/* Cabeçalho e navegação */
+header {
+    background: #333;
+    color: #530c0c;
+    padding: 0;
+    position: relative;
+}
+
+header::before, header::after {
+    content: '';
+    display: block;
+    height: 10px;
+}
+
+header .faixa-branca {
+    background: #fff; /* Faixa branca */
+    height: 10px;
+    width: 100%;
+}
+
+header::before {
+    background: #ffcc00; /* Faixa amarela */
+    
+}
+/* Ajuste para mover a logo mais para cima */
+.welcome img {
+    margin-top: -60px; /* Ajuste o valor conforme necessário */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto 0;
+    padding: 10px 0;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Texto logo amarelo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s; /* Corrigido */
+}
+
+nav ul li a:hover {
+    background: #9c7b0d;
+    border-radius: 4px;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+#welcome {
+    background: url('campo-futebol.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+#welcome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+#welcome p {
+    font-size: 24px;
+}
+
+/* Seção Próximo Jogo */
+
+#next-game {
+    background: #4c4205;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+#next-game h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.game-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.game-info {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Seção Time */
+#team {
+    background: #ebeaea;
+    padding: 40px 20px;
+}
+
+#team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
